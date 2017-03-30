@@ -35,7 +35,7 @@
 //MYSQL_URL     mysql://admin:admin@172.30.62.172:3306/sampledb
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-//$dbhost = getenv("MYSQL_DB_HOST");
+$dbhost = getenv("MYSQL_HOST");
 $dbname = getenv("MYSQL_DATABASE");
 $dbuser = getenv("MYSQL_USER");
 $dbpwd = getenv("MYSQL_PASSWORD");
@@ -49,7 +49,7 @@ define('DB_USER', $dbuser);
 define('DB_PASSWORD',  $dbpwd);
 
 /** MySQL hostname */
-//define('DB_HOST', $dbhost);
+define('DB_HOST', $dbhost);
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
