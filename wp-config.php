@@ -32,13 +32,13 @@
 //define('DB_HOST', 'rds-mysql-sonam.cem5k1umd4qd.us-east-1.rds.amazonaws.com');
 
 
-//MYSQL_URL     mysql://user564:nkRiaDcGfkYEqiKY@172.30.34.29:3306/sampledb
+//MYSQL_URL     mysql://admin:admin@172.30.62.172:3306/sampledb
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-$dbhost = getenv("MYSQL_DB_HOST");
-$dbname = getenv("MYSQL_DB_NAME");
-$dbuser = getenv("MYSQL_DB_USERNAME");
-$dbpwd = getenv("MYSQL_DB_PASSWORD");
+//$dbhost = getenv("MYSQL_DB_HOST");
+$dbname = getenv("MYSQL_DATABASE");
+$dbuser = getenv("MYSQL_USER");
+$dbpwd = getenv("MYSQL_PASSWORD");
 
 define('DB_NAME',$dbname);
 
@@ -49,7 +49,7 @@ define('DB_USER', $dbuser);
 define('DB_PASSWORD',  $dbpwd);
 
 /** MySQL hostname */
-define('DB_HOST', $dbhost);
+//define('DB_HOST', $dbhost);
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
